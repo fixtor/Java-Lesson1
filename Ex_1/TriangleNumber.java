@@ -20,17 +20,10 @@ public class TriangleNumber<userInput> {
 		return userInput;
 	}
 
-<<<<<<< HEAD
 	int triangleNumber() {
 		return (this.userInput * (this.userInput + 1)) / 2;
 	}
 
 //	int factorialNumber()
-=======
-	Integer triangleNumber() {
-		return (this.userInput * (userInput + 1)) / 2;
-	}
 
-//	Integer factorialNuber()
->>>>>>> f8df09778a720e3ce1bd24a76f650b3dd60660e6
 }
