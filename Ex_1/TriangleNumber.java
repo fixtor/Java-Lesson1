@@ -1,5 +1,7 @@
 public class TriangleNumber<userInput> {
-	//	1. Вычислить n-ое треугольного число(сумма чисел от 1 до n), n! (произведение чисел от 1 до n)
+	/**
+	 * 1. Вычислить n-ое треугольного число(сумма чисел от 1 до n), n! (произведение чисел от 1 до n)
+	 */
 	private int userInput;
 
 	{this.userInput = 1;}
@@ -20,10 +22,23 @@ public class TriangleNumber<userInput> {
 		return userInput;
 	}
 
-	int triangleNumber() {
+	int getTriangleNumber() {
 		return (this.userInput * (this.userInput + 1)) / 2;
 	}
 
-//	int factorialNumber()
+	int getFactorialSimple() {
+		int temp = 1;
+		for (int i = 1; i <= this.userInput; i++) {
+			temp *= i;
+		}
+		return temp;
+	}
 
+	public static int getFactorialRecur(int userInput) {
+		if (userInput <= 1) {
+			return 1;
+		} else {
+			return userInput * getFactorialRecur(userInput - 1);
+		}
+	}
 }
