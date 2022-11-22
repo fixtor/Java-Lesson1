@@ -8,8 +8,8 @@ public class Main {
 		t.setUserInput(3);
 		fSimple.setUserInput(5);
 
-		System.out.println("Факториал: " + fRecur.getFactorialRecur(5));
-		System.out.println("Факториал: " + fSimple.getFactorialSimple());
+		System.out.println("Факториал рекурсивный: " + fRecur.getFactorialRecur(10));
+		System.out.println("Факториал простой: " + fSimple.getFactorialSimple());
 		System.out.println("Треугольник из " + t.getTriangleNumber() + " элементов");
 	}
 }

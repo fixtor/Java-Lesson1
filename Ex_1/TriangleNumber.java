@@ -19,7 +19,7 @@ public class TriangleNumber<userInput> {
 	}
 
 	public int getUserInput() {
-		return userInput;
+		return this.userInput;
 	}
 
 	int getTriangleNumber() {
