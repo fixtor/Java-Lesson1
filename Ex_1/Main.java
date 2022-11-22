@@ -1,6 +1,9 @@
 public class Main {
 	public static void main(String[] args) {
 
+		Us
+
+
 		TriangleNumber t = new TriangleNumber();
 		TriangleNumber fSimple = new TriangleNumber<>();
 		TriangleNumber fRecur  = new TriangleNumber();
