@@ -1,4 +1,4 @@
-public class TriangleNumber<userInput> {
+public class TriangleAndFactorial<userInput> {
 	/**
 	 * 1. Вычислить n-ое треугольного число(сумма чисел от 1 до n), n! (произведение чисел от 1 до n)
 	 */
@@ -6,7 +6,7 @@ public class TriangleNumber<userInput> {
 
 	{this.userInput = 1;}
 
-	public TriangleNumber() {}
+	public TriangleAndFactorial() {}
 
 	private boolean isCorrect(int userInput) {
 		return (userInput > 0);
