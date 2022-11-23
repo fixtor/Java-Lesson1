@@ -4,11 +4,12 @@ public class SimpleNumbers {
 	 */
 	public void getSimpleNum() {
 
-		for (int j = 3; j < 1000; j++) {
+		for (int  i = 3; i < 1000; i++) {
 			int flag1 = 0;
-			for (int i = 1; i < j + 1; i++) if (j % i == 0) flag1++;
-			if (flag1 == 2) System.out.print(j + " ");
+			for (int j = 1; j < i + 1; j++) if (i % j == 0) flag1++;
+			if (flag1 == 2) System.out.print(i + " ");
 		}
+		System.out.println();
 	}
 }
 

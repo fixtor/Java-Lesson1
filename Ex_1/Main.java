@@ -1,35 +1,45 @@
+import java.util.Scanner;
+
 /**
  * 1. Вычислить n-ое треугольного число(сумма чисел от 1 до n), n! (произведение чисел от 1 до n)
  * 2. Вывести все простые числа от 1 до 1000
  * 3. Реализовать простой калькулятор
- * 4. *+Задано уравнение вида q + w = e, q, w, e >= 0. Некоторые цифры могут быть заменены знаком вопроса, например 1? + ?5 = 69.
- * Требуется восстановить выражение до верного равенства. Предложить хотя бы одно решение или сообщить, что его нет.
- */
+  */
 
 public class Main {
 	public static void main(String[] args) {
 
 		System.out.println("Input any number: ");
-		UserInViaScanner uInput = new UserInViaScanner(); //Ввод данных
+		Scanner uInt1 = new Scanner(System.in); //Ввод данных
+		int numFactorial = uInt1.nextInt();
 
 
 		TriangleAndFactorial t = new TriangleAndFactorial(); // Задание 1
 		TriangleAndFactorial fSimple = new TriangleAndFactorial<>();
 		TriangleAndFactorial fRecur = new TriangleAndFactorial();
 
-		t.setUserInput(uInput.num);
-		fSimple.setUserInput(uInput.num);
+		t.setUserInput(numFactorial);
+		fSimple.setUserInput(numFactorial);
 
-		System.out.println("Факториал рекурсивный: " + fRecur.getFactorialRecur(uInput.num));
-		System.out.println("Факториал простой: " + fSimple.getFactorialSimple());
-		System.out.println("Треугольник из " + t.getTriangleNumber() + " элементов");
+		System.out.println("Задание 1. Факториал рекурсивный: " + fRecur.getFactorialRecur(numFactorial));
+		System.out.println("Задание 1. Факториал простой: " + fSimple.getFactorialSimple());
+		System.out.println("Задание 1. Треугольник из " + t.getTriangleNumber() + " элементов\n");
 
 		SimpleNumbers result = new SimpleNumbers(); // Задание 2
+		System.out.println("Задание 2. Простые числа до 1000");
 		result.getSimpleNum();
+
+		System.out.println("\nЗадание 3. Введите арифметическое выражение x <действие> y: ");
+		Scanner uInt2 = new Scanner(System.in); //Ввод данных
+		Calc newData = new Calc();
+		newData.setData(uInt2.nextLine());
+
+		if (newData.getIntResult() == 0) System.out.println(newData.getResultDiv());
+		else System.out.println(newData.getIntResult());
 	}
 }
 
-//for(int item:array) System.out.print(item+" ");
+
 
 
 
