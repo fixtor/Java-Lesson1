@@ -29,7 +29,7 @@ public class Main {
 		System.out.println("Задание 2. Простые числа до 1000");
 		result.getSimpleNum();
 
-		System.out.println("\nЗадание 3. Введите арифметическое выражение x <действие> y: ");
+		System.out.println("\nЗадание 3. Введите арифметическое выражение x [пробел] <действие> [пробел] y: ");
 		Scanner uInt2 = new Scanner(System.in); //Ввод данных
 		Calc newData = new Calc();
 		newData.setData(uInt2.nextLine());
