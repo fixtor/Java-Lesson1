@@ -14,16 +14,16 @@ public class Main {
 		int numFactorial = uInt1.nextInt();
 
 
-		TriangleAndFactorial t = new TriangleAndFactorial(); // Задание 1
-		TriangleAndFactorial fSimple = new TriangleAndFactorial<>();
-		TriangleAndFactorial fRecur = new TriangleAndFactorial();
+		TriangleAndFactorial triangleNum = new TriangleAndFactorial(); // Задание 1
+		TriangleAndFactorial factorial = new TriangleAndFactorial<>();
+		TriangleAndFactorial factorialRecursion = new TriangleAndFactorial();
 
-		t.setUserInput(numFactorial);
-		fSimple.setUserInput(numFactorial);
+		triangleNum.setUserInput(numFactorial);
+		factorial.setUserInput(numFactorial);
 
-		System.out.println("Задание 1. Факториал рекурсивный: " + fRecur.getFactorialRecur(numFactorial));
-		System.out.println("Задание 1. Факториал простой: " + fSimple.getFactorialSimple());
-		System.out.println("Задание 1. Треугольник из " + t.getTriangleNumber() + " элементов\n");
+		System.out.println("Задание 1. Факториал рекурсивный: " + factorialRecursion.getFactorialRecur(numFactorial));
+		System.out.println("Задание 1. Факториал простой: " + factorial.getFactorialSimple());
+		System.out.println("Задание 1. Треугольник из " + triangleNum.getTriangleNumber() + " элементов\n");
 
 		SimpleNumbers result = new SimpleNumbers(); // Задание 2
 		System.out.println("Задание 2. Простые числа до 1000");
